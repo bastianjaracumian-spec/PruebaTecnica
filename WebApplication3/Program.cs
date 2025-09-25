@@ -17,7 +17,7 @@ builder.Services.AddScoped<IJWTServices, JWTServices>();
 
 
 
-builder.Services.AddDbContext<ApiDBContext>(options => options.UseSqlServer(builder.Configuration["ConecctionStrings:TelemedicinaBD"]));
+builder.Services.AddDbContext<ApiDBContext>(options => options.UseSqlServer(builder.Configuration["ConecctionStrings:AtencionesMedicas"]));
 // Add services to the container.
 builder.Services.AddCors(options =>
 {
