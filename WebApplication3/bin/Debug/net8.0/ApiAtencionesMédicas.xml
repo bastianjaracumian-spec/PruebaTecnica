@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiAtencionesMédicas</name>
+    </assembly>
+    <members>
+        <member name="M:ApiAtencionesMédicas.Controllers.AuthenticatorController.GetTokenUser(System.String,System.String,System.String)">
+            <summary>
+            Metodo para creación de token JWT por usuario
+            </summary>
+            <param name="User"></param>
+            <param name="Pass"></param>
+            <param name="TypeUser"></param>
+            <returns>Retorna Token</returns>
+            <response code="201">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
+            <response code="200">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Jj+rGgksX215fZdNP7HECWSjA2K+15jvv1MvLt6PVB4=",
+  "Source": "ApiAtencionesMédicas",
+  "BasePath": "_content/ApiAtencionesMédicas",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
