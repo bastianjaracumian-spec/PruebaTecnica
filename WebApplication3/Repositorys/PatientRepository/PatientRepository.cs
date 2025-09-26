@@ -30,7 +30,7 @@ namespace ApiAtencionesMédicas.Repositorys.PatientRepository
             try
             {
                 
-                List<PatientDAO> jWTUserDAOs = new List<PatientDAO>();
+                List<PatientDAO> patientDAOs = new List<PatientDAO>();
                 using (var command = _unitOfWork._context.Database.GetDbConnection().CreateCommand())
                 {
                     command.CommandText = "sp_ListPatients";
@@ -43,29 +43,29 @@ namespace ApiAtencionesMédicas.Repositorys.PatientRepository
                    
                     foreach (DataRow item in ds.Rows)
                     {
-                        PatientDAO jwtDAO = new PatientDAO();
-                        jwtDAO.Patient_Id = Convert.ToInt32(item.ItemArray[0].ToString());
-                        jwtDAO.Patient_FirstName = item.ItemArray[1].ToString();
-                        jwtDAO.Patient_LastName = item.ItemArray[2].ToString();
-                        jwtDAO.Patient_RUT = item.ItemArray[3].ToString();
-                        jwtDAO.Patient_DateOfBirth = string.IsNullOrEmpty(item.ItemArray[4].ToString()) ? null : Convert.ToDateTime(item.ItemArray[4].ToString());
-                        jwtDAO.Patient_Gender = item.ItemArray[5].ToString();
-                        jwtDAO.Patient_Phone = item.ItemArray[6].ToString();
-                        jwtDAO.Patient_Email = item.ItemArray[7].ToString();
-                        jwtDAO.Patient_AddressLine1 = item.ItemArray[8].ToString();
-                        jwtDAO.Patient_AddressLine2 = item.ItemArray[9].ToString();
-                        jwtDAO.Patient_City = item.ItemArray[10].ToString();
-                        jwtDAO.Patient_State = item.ItemArray[11].ToString();
-                        jwtDAO.Patient_PostalCode = item.ItemArray[12].ToString();
-                        jwtDAO.Patient_CreatedBy = item.ItemArray[13].ToString();
-                        jwtDAO.Patient_CreatedAt = string.IsNullOrEmpty(item.ItemArray[14].ToString()) ? null : Convert.ToDateTime(item.ItemArray[14].ToString());
-                        jwtDAO.Patient_ModifiedBy = item.ItemArray[15].ToString();
-                        jwtDAO.Patient_ModifiedAt = string.IsNullOrEmpty(item.ItemArray[16].ToString()) ? null : Convert.ToDateTime(item.ItemArray[16].ToString());
-                        jwtDAO.Patient_Active = Convert.ToBoolean(item.ItemArray[17].ToString());
-                        jWTUserDAOs.Add(jwtDAO);
+                        PatientDAO patientDAO = new PatientDAO();
+                        patientDAO.Patient_Id = Convert.ToInt32(item.ItemArray[0].ToString());
+                        patientDAO.Patient_FirstName = item.ItemArray[1].ToString();
+                        patientDAO.Patient_LastName = item.ItemArray[2].ToString();
+                        patientDAO.Patient_RUT = item.ItemArray[3].ToString();
+                        patientDAO.Patient_DateOfBirth = string.IsNullOrEmpty(item.ItemArray[4].ToString()) ? null : Convert.ToDateTime(item.ItemArray[4].ToString());
+                        patientDAO.Patient_Gender = item.ItemArray[5].ToString();
+                        patientDAO.Patient_Phone = item.ItemArray[6].ToString();
+                        patientDAO.Patient_Email = item.ItemArray[7].ToString();
+                        patientDAO.Patient_AddressLine1 = item.ItemArray[8].ToString();
+                        patientDAO.Patient_AddressLine2 = item.ItemArray[9].ToString();
+                        patientDAO.Patient_City = item.ItemArray[10].ToString();
+                        patientDAO.Patient_State = item.ItemArray[11].ToString();
+                        patientDAO.Patient_PostalCode = item.ItemArray[12].ToString();
+                        patientDAO.Patient_CreatedBy = item.ItemArray[13].ToString();
+                        patientDAO.Patient_CreatedAt = string.IsNullOrEmpty(item.ItemArray[14].ToString()) ? null : Convert.ToDateTime(item.ItemArray[14].ToString());
+                        patientDAO.Patient_ModifiedBy = item.ItemArray[15].ToString();
+                        patientDAO.Patient_ModifiedAt = string.IsNullOrEmpty(item.ItemArray[16].ToString()) ? null : Convert.ToDateTime(item.ItemArray[16].ToString());
+                        patientDAO.Patient_Active = Convert.ToBoolean(item.ItemArray[17].ToString());
+                        patientDAOs.Add(patientDAO);
                     }
                 }
-                return jWTUserDAOs;
+                return patientDAOs;
 
             }
             catch (Exception ex)

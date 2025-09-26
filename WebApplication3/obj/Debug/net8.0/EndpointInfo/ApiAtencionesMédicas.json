@@ -42,18 +42,128 @@
         ],
         "responses": {
           "200": {
-            "description": "La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado"
+            "description": "OK"
           },
           "201": {
-            "description": "La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado"
+            "description": "Creación correcta de token"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
     },
-    "/api/Doctor/obtener": {
+    "/Api/Doctor/GetDoctors": {
       "get": {
         "tags": [
           "Doctor"
+        ],
+        "summary": "Busqueda total de doctores",
+        "responses": {
+          "200": {
+            "description": "Retorna lista de doctores"
+          },
+          "500": {
+            "description": "Error interno"
+          }
+        }
+      }
+    },
+    "/Api/Doctor/AddDoctor": {
+      "post": {
+        "tags": [
+          "Doctor"
+        ],
+        "summary": "",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DoctorDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DoctorDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DoctorDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Api/Doctor/UpdateDoctor/{Doctor_Id}": {
+      "patch": {
+        "tags": [
+          "Doctor"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "Doctor_Id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DoctorDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DoctorDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DoctorDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Api/Doctor/DeleteDoctor/{Doctor_Id}": {
+      "delete": {
+        "tags": [
+          "Doctor"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "Doctor_Id",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -67,10 +177,13 @@
         "tags": [
           "Patient"
         ],
-        "summary": "Busqueda total de usuarios",
+        "summary": "Busqueda total de pacientes",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna lista de pacientes"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
@@ -80,7 +193,7 @@
         "tags": [
           "Patient"
         ],
-        "summary": "Busqueda de usuario por rut",
+        "summary": "Busqueda de paciente por rut",
         "parameters": [
           {
             "name": "Patient_RUT",
@@ -93,7 +206,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna solo un usuario consultado por rut"
+          },
+          "401": {
+            "description": "Authorization es requerido"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
@@ -103,7 +222,7 @@
         "tags": [
           "Patient"
         ],
-        "summary": "",
+        "summary": "Metodo para agregar paciente",
         "requestBody": {
           "description": "",
           "content": {
@@ -127,6 +246,18 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "201": {
+            "description": "Crea paciente"
+          },
+          "400": {
+            "description": "Usuario no creado, verificar si ya existe"
+          },
+          "401": {
+            "description": "Authorization es requerido"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
@@ -136,10 +267,12 @@
         "tags": [
           "Patient"
         ],
+        "summary": "Metodo para actualizar paciente",
         "parameters": [
           {
             "name": "Patient_Id",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -148,6 +281,7 @@
           }
         ],
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -168,7 +302,16 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Actualizacion correcta"
+          },
+          "400": {
+            "description": "Usuario no actualizado, verificar si existe"
+          },
+          "401": {
+            "description": "Authorization es requerido"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
@@ -178,10 +321,12 @@
         "tags": [
           "Patient"
         ],
+        "summary": "Metodo para eliminar paciente",
         "parameters": [
           {
             "name": "Patient_Id",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -191,7 +336,16 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Eliminación Correcta"
+          },
+          "400": {
+            "description": "Usuario no eliminado, verificar si existe"
+          },
+          "401": {
+            "description": "Authorization es requerido"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
@@ -199,6 +353,36 @@
   },
   "components": {
     "schemas": {
+      "DoctorDTO": {
+        "type": "object",
+        "properties": {
+          "doctor_FirstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctor_LastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctor_Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctor_Phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "doctor_LicenseNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "specialityId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "PatientDTO": {
         "type": "object",
         "properties": {

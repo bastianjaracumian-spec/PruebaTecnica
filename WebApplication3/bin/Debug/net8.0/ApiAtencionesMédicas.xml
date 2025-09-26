@@ -12,30 +12,114 @@
             <param name="Pass"></param>
             <param name="TypeUser"></param>
             <returns>Retorna Token</returns>
-            <response code="201">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
-            <response code="200">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
+            <response code="201">Creación correcta de token</response>
+            <response code="500">Error interno</response>
         </member>
-        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.GetUsers(System.String)">
+        <member name="M:ApiAtencionesMédicas.Controllers.DoctorController.GetDoctors(System.String)">
             <summary>
-            Busqueda total de usuarios
+            Busqueda total de doctores
             </summary>
             <param name="Authorization"></param>
-            <returns></returns>
+            <returns>Retorna pacientes</returns>
+            <response code="200">Retorna lista de doctores</response>
+            <response code="500">Error interno</response>
         </member>
-        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.GetUserByRut(System.String,System.String)">
-            <summary>
-            Busqueda de usuario por rut
-            </summary>
-            <param name="Authorization"></param>
-            <param name="Patient_RUT"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.AddPatient(System.String,ApiAtencionesMédicas.Models.DTO.PatientDTO)">
+        <member name="M:ApiAtencionesMédicas.Controllers.DoctorController.AddDoctor(System.String,ApiAtencionesMédicas.Models.DTO.DoctorDTO)">
             <summary>
             
             </summary>
             <param name="Authorization"></param>
+            <param name="doctorDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.DoctorController.UpdateDoctor(System.String,ApiAtencionesMédicas.Models.DTO.DoctorDTO,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Authorization"></param>
+            <param name="doctorDTO"></param>
+            <param name="Doctor_Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.DoctorController.DeletePatient(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Authorization"></param>
+            <param name="Doctor_Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.GetUsers(System.String)">
+            <summary>
+            Busqueda total de pacientes
+            </summary>
+            <param name="Authorization"></param>
+            <returns>Retorna pacientes</returns>
+            <response code="200">Retorna lista de pacientes</response>
+            <response code="500">Error interno</response>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.GetUserByRut(System.String,System.String)">
+            <summary>
+            Busqueda de paciente por rut
+            </summary>
+            <param name="Authorization"></param>
+            <param name="Patient_RUT"></param>
+            <returns>Retorna solo un usuario consultado por rut</returns>
+            <response code="200">Retorna solo un usuario consultado por rut</response>
+            <response code="401">Authorization es requerido</response>
+            <response code="500">Error interno</response>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.AddPatient(System.String,ApiAtencionesMédicas.Models.DTO.PatientDTO)">
+            <summary>
+            Metodo para agregar paciente
+            </summary>
+            <param name="Authorization"></param>
             <param name="patientDTO"></param>
+            <returns>retorna mensaje de exito</returns>
+            <response code="201">Crea paciente</response>
+            <response code="400">Usuario no creado, verificar si ya existe</response>
+            <response code="401">Authorization es requerido</response>
+            <response code="500">Error interno</response>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.UpdatePatient(System.String,ApiAtencionesMédicas.Models.DTO.PatientDTO,System.Int32)">
+            <summary>
+            Metodo para actualizar paciente
+            </summary>
+            <param name="Authorization"></param>
+            <param name="patientDTO"></param>
+            <param name="Patient_Id"></param>
+            <returns>Retorna mensaje de actualización correcta</returns>
+            <response code="200">Actualizacion correcta</response>
+            <response code="400">Usuario no actualizado, verificar si existe</response>
+            <response code="401">Authorization es requerido</response>
+            <response code="500">Error interno</response>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.DeletePatient(System.String,System.Int32)">
+            <summary>
+            Metodo para eliminar paciente
+            </summary>
+            <param name="Authorization"></param>
+            <param name="Patient_Id"></param>
+            <returns></returns>
+            <returns>Retorna mensaje de actualización correcta</returns>
+            <response code="200">Eliminación Correcta</response>
+            <response code="400">Usuario no eliminado, verificar si existe</response>
+            <response code="401">Authorization es requerido</response>
+            <response code="500">Error interno</response>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Repositorys.DoctorRepository.DoctorRepository.sp_AddDoctorRepository(ApiAtencionesMédicas.Models.DTO.DoctorDTO,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="patientDTO"></param>
+            <param name="Patient_CreatedBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Repositorys.DoctorRepository.DoctorRepository.sp_DeleteDoctorRepository(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Patient_Id"></param>
             <returns></returns>
         </member>
         <member name="M:ApiAtencionesMédicas.Repositorys.PatientRepository.PatientRepository.sp_ListPatientsRepository">

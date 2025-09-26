@@ -30,8 +30,8 @@ namespace ApiAtencionesMédicas.Controllers
         /// <param name="Pass"></param>
         /// <param name="TypeUser"></param>
         /// <returns>Retorna Token</returns>
-        /// <response code="201">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
-        /// <response code="200">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
+        /// <response code="201">Creación correcta de token</response>
+        /// <response code="500">Error interno</response>
 
         [HttpGet("GetTokenUser/{User}/{Pass}/{TypeUser}")]
         public async Task<IActionResult> GetTokenUser(string User, string Pass, string TypeUser)

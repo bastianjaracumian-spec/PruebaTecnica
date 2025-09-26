@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\services\\doctorservices\\idoctorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\services\\doctorservices\\idoctorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\services\\doctorservices\\doctorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\services\\doctorservices\\doctorservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\repositorys\\doctorrepository\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\repositorys\\doctorrepository\\doctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\repositorys\\doctorrepository\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\repositorys\\doctorrepository\\idoctorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\services\\patientservices\\patientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\services\\patientservices\\patientservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\repositorys\\patientrepository\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\repositorys\\patientrepository\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\models\\dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\models\\dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\models\\dao\\doctordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\models\\dao\\doctordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|c:\\users\\bastian\\desktop\\prueba tecnica\\pruebatecnica\\webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6936A4DA-EF9C-49F2-A2F9-7BB8C52371BF}|WebApplication3\\ApiAtencionesM\u00E9dicas.csproj|solutionrelative:webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "WebApplication3\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAiwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:05:21.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IDoctorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Repositorys\\DoctorRepository\\IDoctorRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Repositorys\\DoctorRepository\\IDoctorRepository.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Repositorys\\DoctorRepository\\IDoctorRepository.cs",
+              "RelativeToolTip": "WebApplication3\\Repositorys\\DoctorRepository\\IDoctorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T04:54:46.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoctorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Repositorys\\DoctorRepository\\DoctorRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Repositorys\\DoctorRepository\\DoctorRepository.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Repositorys\\DoctorRepository\\DoctorRepository.cs",
+              "RelativeToolTip": "WebApplication3\\Repositorys\\DoctorRepository\\DoctorRepository.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAwKwAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T04:54:36.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DoctorDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Models\\DTO\\DoctorDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Models\\DTO\\DoctorDTO.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Models\\DTO\\DoctorDTO.cs",
+              "RelativeToolTip": "WebApplication3\\Models\\DTO\\DoctorDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T07:31:55.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Repositorys\\PatientRepository\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Repositorys\\PatientRepository\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Repositorys\\PatientRepository\\PatientRepository.cs",
+              "RelativeToolTip": "WebApplication3\\Repositorys\\PatientRepository\\PatientRepository.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAcwNIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T04:54:38.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientServices.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Services\\PatientServices\\PatientServices.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Services\\PatientServices\\PatientServices.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Services\\PatientServices\\PatientServices.cs",
+              "RelativeToolTip": "WebApplication3\\Services\\PatientServices\\PatientServices.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:02:48.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "WebApplication3\\Controllers\\PatientController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAcwKsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T02:08:21.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoctorServices.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Services\\DoctorServices\\DoctorServices.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Services\\DoctorServices\\DoctorServices.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Services\\DoctorServices\\DoctorServices.cs",
+              "RelativeToolTip": "WebApplication3\\Services\\DoctorServices\\DoctorServices.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:11:33.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Program.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Program.cs",
+              "RelativeToolTip": "WebApplication3\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:07:56.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDoctorServices.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Services\\DoctorServices\\IDoctorServices.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Services\\DoctorServices\\IDoctorServices.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Services\\DoctorServices\\IDoctorServices.cs",
+              "RelativeToolTip": "WebApplication3\\Services\\DoctorServices\\IDoctorServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T05:13:43.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoctorDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Models\\DAO\\DoctorDAO.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Models\\DAO\\DoctorDAO.cs",
+              "ToolTip": "C:\\Users\\Bastian\\Desktop\\prueba tecnica\\PruebaTecnica\\WebApplication3\\Models\\DAO\\DoctorDAO.cs",
+              "RelativeToolTip": "WebApplication3\\Models\\DAO\\DoctorDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T04:55:09.497Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

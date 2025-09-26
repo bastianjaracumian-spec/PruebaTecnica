@@ -27,12 +27,86 @@
   },
   {
     "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.DoctorController",
-    "Method": "obtener",
-    "RelativePath": "api/Doctor/obtener",
+    "Method": "AddDoctor",
+    "RelativePath": "Api/Doctor/AddDoctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "doctorDTO",
+        "Type": "ApiAtencionesM\u00E9dicas.Models.DTO.DoctorDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.DoctorController",
+    "Method": "DeletePatient",
+    "RelativePath": "Api/Doctor/DeleteDoctor/{Doctor_Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Doctor_Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.DoctorController",
+    "Method": "GetDoctors",
+    "RelativePath": "Api/Doctor/GetDoctors",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.DoctorController",
+    "Method": "UpdateDoctor",
+    "RelativePath": "Api/Doctor/UpdateDoctor/{Doctor_Id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "doctorDTO",
+        "Type": "ApiAtencionesM\u00E9dicas.Models.DTO.DoctorDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "Doctor_Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
