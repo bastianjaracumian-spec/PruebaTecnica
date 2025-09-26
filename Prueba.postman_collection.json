@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "8b3c600b-95ac-4d41-9283-c02595322dfe",
+		"name": "Prueba Técnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21604337"
+	},
+	"item": [
+		{
+			"name": "AuthenticatorController",
+			"item": [
+				{
+					"name": "GetTokenUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Localhost}}/Authenticator/GetTokenUser/19517569-1/prueba/1",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Authenticator",
+								"GetTokenUser",
+								"19517569-1",
+								"prueba",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PatientController",
+			"item": [
+				{
+					"name": "GetUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODQ3ODQ2LCJleHAiOjE3NTg5MzQyNDYsImlhdCI6MTc1ODg0Nzg0Nn0.i547y0XU9gPM8V6LloOSnJDSvU5ATeR7XQdRu8fBSsKu88KOeDlOkA9FoKKtIeR5a5EzFHv6F6TNVypptbMFQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Localhost}}/Patient/GetUsers",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Patient",
+								"GetUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserByRut",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODQ3ODQ2LCJleHAiOjE3NTg5MzQyNDYsImlhdCI6MTc1ODg0Nzg0Nn0.i547y0XU9gPM8V6LloOSnJDSvU5ATeR7XQdRu8fBSsKu88KOeDlOkA9FoKKtIeR5a5EzFHv6F6TNVypptbMFQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Localhost}}/Patient/GetUserByRut?Patient_RUT=19517569-1",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Patient",
+								"GetUserByRut"
+							],
+							"query": [
+								{
+									"key": "Patient_RUT",
+									"value": "19517569-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddPatient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODU3MjI4LCJleHAiOjE3NTg5NDM2MjgsImlhdCI6MTc1ODg1NzIyOH0.od7JAWfd5m32KLtTcxvcxJSA-lOpG5pmWQG61YScATsbHf-d32tW9-4981VEeljctTy8iR0N7_7ued39u-rNlQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"patient_FirstName\": \"string\",\r\n  \"patient_LastName\": \"string\",\r\n  \"patient_RUT\": \"string\",\r\n  \"patient_DateOfBirth\": \"2025-09-26\",\r\n  \"patient_Gender\": \"string\",\r\n  \"patient_Phone\": \"string\",\r\n  \"patient_Email\": \"string\",\r\n  \"patient_AddressLine1\": \"string\",\r\n  \"patient_AddressLine2\": \"string\",\r\n  \"patient_City\": \"string\",\r\n  \"patient_State\": \"string\",\r\n  \"patient_PostalCode\": \"string\",\r\n  \"patient_CreatedBy\": \"string\",\r\n  \"patient_CreatedAt\": \"2025-09-26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Localhost}}/Patient/AddPatient",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Patient",
+								"AddPatient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePatient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODU3NTA5LCJleHAiOjE3NTg5NDM5MDksImlhdCI6MTc1ODg1NzUwOX0.JfJh3QTPul8imISwTI2EePjpPwslWQYNjU6O7QMAtRkGTYdl1CqDOLlInLrWK2ZO6utt7Wf3loMz6rXMCVS3Cg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"patient_FirstName\": \"patient_FirstName\",\r\n  \"patient_LastName\": \"patient_LastName\",\r\n  \"patient_RUT\": \"patient_RUT\",\r\n  \"patient_DateOfBirth\": \"2025-09-26T03:31:20.418Z\",\r\n  \"patient_Gender\": \"patient_Gender\",\r\n  \"patient_Phone\": \"patient_Phone\",\r\n  \"patient_Email\": \"patient_Email\",\r\n  \"patient_AddressLine1\": \"patient_AddressLine1\",\r\n  \"patient_AddressLine2\": \"patient_AddressLine2\",\r\n  \"patient_City\": \"patient_City\",\r\n  \"patient_State\": \"patient_State\",\r\n  \"patient_PostalCode\": \"patient_PostalCode\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Localhost}}/Patient/UpdatePatient/11",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Patient",
+								"UpdatePatient",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePatient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODU5MDExLCJleHAiOjE3NTg5NDU0MTEsImlhdCI6MTc1ODg1OTAxMX0.-vrG4-Hfa-pBPIoMboBK4hrAwFky-kpfjJFQUUnyIYyF2kEBEX1JWM-xFv09XVun9voeJGfcW4L82TVdN6QM1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Localhost}}/Patient/DeletePatient/1",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Patient",
+								"DeletePatient",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "DoctorController",
+			"item": [
+				{
+					"name": "GetDoctors",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODQ3ODQ2LCJleHAiOjE3NTg5MzQyNDYsImlhdCI6MTc1ODg0Nzg0Nn0.i547y0XU9gPM8V6LloOSnJDSvU5ATeR7XQdRu8fBSsKu88KOeDlOkA9FoKKtIeR5a5EzFHv6F6TNVypptbMFQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Localhost}}/Doctor/GetDoctors",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Doctor",
+								"GetDoctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddDoctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODU3MjI4LCJleHAiOjE3NTg5NDM2MjgsImlhdCI6MTc1ODg1NzIyOH0.od7JAWfd5m32KLtTcxvcxJSA-lOpG5pmWQG61YScATsbHf-d32tW9-4981VEeljctTy8iR0N7_7ued39u-rNlQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"doctor_FirstName\": \"string\",\r\n  \"doctor_LastName\": \"string\",\r\n  \"doctor_Email\": \"string\",\r\n  \"doctor_Phone\": \"string\",\r\n  \"doctor_LicenseNumber\": \"123456\",\r\n  \"specialityId\": 1,\r\n  \"doctor_CreatedBy\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Localhost}}/Doctor/AddDoctor",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Doctor",
+								"AddDoctor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateDoctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODU3NTA5LCJleHAiOjE3NTg5NDM5MDksImlhdCI6MTc1ODg1NzUwOX0.JfJh3QTPul8imISwTI2EePjpPwslWQYNjU6O7QMAtRkGTYdl1CqDOLlInLrWK2ZO6utt7Wf3loMz6rXMCVS3Cg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"doctor_FirstName\": \"BASTIAN \",\r\n  \"doctor_LastName\": \"JARA\",\r\n  \"doctor_Email\": \"prueba\",\r\n  \"doctor_Phone\": \"569\",\r\n  \"doctor_LicenseNumber\": \"12345123123\",\r\n  \"specialityId\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Localhost}}/Doctor/UpdateDoctor/5",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Doctor",
+								"UpdateDoctor",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteDoctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODU5MDExLCJleHAiOjE3NTg5NDU0MTEsImlhdCI6MTc1ODg1OTAxMX0.-vrG4-Hfa-pBPIoMboBK4hrAwFky-kpfjJFQUUnyIYyF2kEBEX1JWM-xFv09XVun9voeJGfcW4L82TVdN6QM1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{Localhost}}/Doctor/DeleteDoctor/13",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Doctor",
+								"DeleteDoctor",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AppointmentController",
+			"item": [
+				{
+					"name": "GetAppointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkFwaUF0ZW5jaW9uZXNNw6lkaWNhcyIsImRhdGEiOiJ7XCJVc2VyX0lkXCI6MSxcIlVzZXJfRmlydE5hbWVcIjpcIkFkbWluXCIsXCJVc2VyX0xhc3ROYW1lXCI6XCJBZG1pblwiLFwiVXNlcl9FbWFpbFwiOlwiXCIsXCJVc2VyX1Bob25lXCI6XCJcIixcIlVzZXJfUlVUXCI6XCIxOTUxNzU2OS0xXCIsXCJVc2VyX0FjdGl2ZVwiOnRydWV9IiwibmJmIjoxNzU4ODQ3ODQ2LCJleHAiOjE3NTg5MzQyNDYsImlhdCI6MTc1ODg0Nzg0Nn0.i547y0XU9gPM8V6LloOSnJDSvU5ATeR7XQdRu8fBSsKu88KOeDlOkA9FoKKtIeR5a5EzFHv6F6TNVypptbMFQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Localhost}}/Appointment/GetAppointment",
+							"host": [
+								"{{Localhost}}"
+							],
+							"path": [
+								"Appointment",
+								"GetAppointment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
