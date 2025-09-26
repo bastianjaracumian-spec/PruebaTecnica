@@ -1,6 +1,8 @@
 using ApiAtencionesMédicas.Models.Context;
 using ApiAtencionesMédicas.Repositorys.JWTRepository.JWTRepository;
+using ApiAtencionesMédicas.Repositorys.PatientRepository;
 using ApiAtencionesMédicas.Services.JWTServices.JWTServices;
+using ApiAtencionesMédicas.Services.PatientServices;
 using ApiAtencionesMédicas.Utils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -10,10 +12,12 @@ var builder = WebApplication.CreateBuilder(args);
 //Inyeccion de repositorios
 builder.Services.AddScoped<UnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IJWTRepository, JWTRepository>();
+builder.Services.AddScoped<IPatientRepository, PatientRepository>();
 builder.Services.AddScoped<JWTUtils, JWTUtils>();
 
 //Inyeccion de servicios
 builder.Services.AddScoped<IJWTServices, JWTServices>();
+builder.Services.AddScoped<IPatientServices, PatientServices>();
 
 
 

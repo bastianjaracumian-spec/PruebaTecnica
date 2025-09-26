@@ -35,7 +35,7 @@ namespace ApiAtencionesMédicas.Utils
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
                     Subject = new ClaimsIdentity(claims),
-                    Expires = DateTime.Now.AddDays(1),
+                    Expires = DateTime.Now.AddDays( Convert.ToDouble(_config.GetSection("DaysExpiredToken").Value)),
                     SigningCredentials = credenciales
                     
                 };
@@ -55,7 +55,7 @@ namespace ApiAtencionesMédicas.Utils
 
             }
         }
-        public JWTUserDAO DecodeTokenJWTUsuario(string Authorization)
+        public JWTUserDAO DecodeJWTUser(string Authorization)
         {
             try
             {

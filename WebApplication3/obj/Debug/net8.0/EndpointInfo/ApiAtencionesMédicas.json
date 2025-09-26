@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Authenticator/GetTokenUser/{User}/{Pass}/{TypeUser}": {
+    "/Api/Authenticator/GetTokenUser/{User}/{Pass}/{TypeUser}": {
       "get": {
         "tags": [
           "Authenticator"
@@ -62,10 +62,34 @@
         }
       }
     },
-    "/api/Patient": {
-      "post": {
+    "/Api/Patient/GetUsers": {
+      "get": {
         "tags": [
           "Patient"
+        ],
+        "summary": "Busqueda total de usuarios",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Api/Patient/GetUserByRut": {
+      "get": {
+        "tags": [
+          "Patient"
+        ],
+        "summary": "Busqueda de usuario por rut",
+        "parameters": [
+          {
+            "name": "Patient_RUT",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -74,41 +98,100 @@
         }
       }
     },
-    "/WeatherForecast": {
-      "get": {
+    "/Api/Patient/AddPatient": {
+      "post": {
         "tags": [
-          "WeatherForecast"
+          "Patient"
         ],
-        "operationId": "GetWeatherForecast",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
+        "summary": "",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientDTO"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Api/Patient/UpdatePatient/{Patient_Id}": {
+      "patch": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "Patient_Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Api/Patient/DeletePatient/{Patient_Id}": {
+      "delete": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "Patient_Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -116,23 +199,55 @@
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "PatientDTO": {
         "type": "object",
         "properties": {
-          "date": {
+          "patient_FirstName": {
             "type": "string",
-            "format": "date"
+            "nullable": true
           },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
+          "patient_LastName": {
+            "type": "string",
+            "nullable": true
           },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
+          "patient_RUT": {
+            "type": "string",
+            "nullable": true
           },
-          "summary": {
+          "patient_DateOfBirth": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "patient_Gender": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_Phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_AddressLine1": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_AddressLine2": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_City": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_State": {
+            "type": "string",
+            "nullable": true
+          },
+          "patient_PostalCode": {
             "type": "string",
             "nullable": true
           }

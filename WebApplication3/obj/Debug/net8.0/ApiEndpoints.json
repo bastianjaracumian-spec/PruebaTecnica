@@ -2,7 +2,7 @@
   {
     "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.AuthenticatorController",
     "Method": "GetTokenUser",
-    "RelativePath": "api/Authenticator/GetTokenUser/{User}/{Pass}/{TypeUser}",
+    "RelativePath": "Api/Authenticator/GetTokenUser/{User}/{Pass}/{TypeUser}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -37,33 +37,107 @@
   },
   {
     "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.PatientController",
-    "Method": "Metodo",
-    "RelativePath": "api/Patient",
+    "Method": "AddPatient",
+    "RelativePath": "Api/Patient/AddPatient",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "patientDTO",
+        "Type": "ApiAtencionesM\u00E9dicas.Models.DTO.PatientDTO",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.PatientController",
+    "Method": "DeletePatient",
+    "RelativePath": "Api/Patient/DeletePatient/{Patient_Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Patient_Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.PatientController",
+    "Method": "GetUserByRut",
+    "RelativePath": "Api/Patient/GetUserByRut",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiAtencionesM\u00E9dicas.WeatherForecast, ApiAtencionesM\u00E9dicas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Patient_RUT",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.PatientController",
+    "Method": "GetUsers",
+    "RelativePath": "Api/Patient/GetUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.PatientController",
+    "Method": "UpdatePatient",
+    "RelativePath": "Api/Patient/UpdatePatient/{Patient_Id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Authorization",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "patientDTO",
+        "Type": "ApiAtencionesM\u00E9dicas.Models.DTO.PatientDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "Patient_Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

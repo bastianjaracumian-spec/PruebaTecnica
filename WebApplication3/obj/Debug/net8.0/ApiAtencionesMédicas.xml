@@ -15,5 +15,40 @@
             <response code="201">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
             <response code="200">La autenticación fue exitosa. La respuesta contendrá el objeto Usuario que fue autenticado</response>
         </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.GetUsers(System.String)">
+            <summary>
+            Busqueda total de usuarios
+            </summary>
+            <param name="Authorization"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.GetUserByRut(System.String,System.String)">
+            <summary>
+            Busqueda de usuario por rut
+            </summary>
+            <param name="Authorization"></param>
+            <param name="Patient_RUT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Controllers.PatientController.AddPatient(System.String,ApiAtencionesMédicas.Models.DTO.PatientDTO)">
+            <summary>
+            
+            </summary>
+            <param name="Authorization"></param>
+            <param name="patientDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Repositorys.PatientRepository.PatientRepository.sp_ListPatientsRepository">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiAtencionesMédicas.Repositorys.PatientRepository.PatientRepository.sp_AddPatientRepository(ApiAtencionesMédicas.Models.DTO.PatientDTO,System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

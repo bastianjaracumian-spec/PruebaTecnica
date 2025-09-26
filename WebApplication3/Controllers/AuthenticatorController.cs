@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 namespace ApiAtencionesMédicas.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("Api/[controller]")]
     public class AuthenticatorController : ControllerBase
     {
         private readonly ILogger<AuthenticatorController> _logger;
@@ -19,7 +19,7 @@ namespace ApiAtencionesMédicas.Controllers
         public AuthenticatorController(ILogger<AuthenticatorController> logger, IJWTServices IJWTServices, JWTUtils jWTUtils)
         {
             _logger = logger;
-            _IJWTServices = IJWTServices;   
+            _IJWTServices = IJWTServices;
             _jWTUtils = jWTUtils;
 
         }
@@ -36,19 +36,26 @@ namespace ApiAtencionesMédicas.Controllers
         [HttpGet("GetTokenUser/{User}/{Pass}/{TypeUser}")]
         public async Task<IActionResult> GetTokenUser(string User, string Pass, string TypeUser)
         {
-            if (string.IsNullOrEmpty(User))
-                return StatusCode(Constants.StatusCode.status400, "User es requerido");
-            if (string.IsNullOrEmpty(Pass))
-                return StatusCode(Constants.StatusCode.status400, "Pass es requerido");
-            if (string.IsNullOrEmpty(TypeUser))
-                return StatusCode(Constants.StatusCode.status400, "TypeUser es requerido");
-            
-            var user = await _IJWTServices.sp_GetUserServices(User, Pass, TypeUser);
-            if (user.User_Id == 0)
-                return StatusCode(Constants.StatusCode.status404, "User not found");
-            var token = _jWTUtils.CreateJWTUser(user);
-            return StatusCode(Constants.StatusCode.status201, new DataResponse { Data = token });
-      
+            try
+            {
+                if (string.IsNullOrEmpty(User))
+                    return StatusCode(Constants.StatusCode.status400, "User is required");
+                if (string.IsNullOrEmpty(Pass))
+                    return StatusCode(Constants.StatusCode.status400, "Pass is required");
+                if (string.IsNullOrEmpty(TypeUser))
+                    return StatusCode(Constants.StatusCode.status400, "TypeUser is required");
+
+                var user = await _IJWTServices.sp_GetUserServices(User, Pass, TypeUser);
+                if (user.User_Id == 0)
+                    return StatusCode(Constants.StatusCode.status404, "User not found");
+                var token = _jWTUtils.CreateJWTUser(user);
+                return StatusCode(Constants.StatusCode.status201, new DataResponse { Data = token });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogDebug("Error: " + ex.Message);
+                return StatusCode(Constants.StatusCode.status500, Constants.ResponseMessage.ErrorInterno);
+            }
         }
     }
 }

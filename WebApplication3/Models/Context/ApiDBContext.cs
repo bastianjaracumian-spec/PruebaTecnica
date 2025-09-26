@@ -5,7 +5,7 @@ namespace ApiAtencionesMédicas.Models.Context
 {
     public class ApiDBContext : DbContext
     {
-        public DbSet<Patient> patients { get; set; } = null;
+        
         public ApiDBContext(DbContextOptions<ApiDBContext> options) : base(options)
         {
 
