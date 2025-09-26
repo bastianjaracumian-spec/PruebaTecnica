@@ -38,8 +38,8 @@ namespace ApiAtencionesMédicas.Repositorys.AppointmentRepository
                     {
                         AppointmentDAO appointmentDAO = new AppointmentDAO();
                         appointmentDAO.Appointment_Id = Convert.ToInt32(item.ItemArray[0].ToString());
-                        appointmentDAO.PatientId = Convert.ToInt32(item.ItemArray[1].ToString());
-                        appointmentDAO.DoctorId = Convert.ToInt32(item.ItemArray[2].ToString());
+                        appointmentDAO.PatientId = item.ItemArray[1].ToString();
+                        appointmentDAO.DoctorId =item.ItemArray[2].ToString();
                         appointmentDAO.Appointment_StartUtc = string.IsNullOrEmpty(item.ItemArray[3].ToString()) ? null : Convert.ToDateTime(item.ItemArray[3].ToString());
                         appointmentDAO.Appointment_EndUtc = string.IsNullOrEmpty(item.ItemArray[4].ToString()) ? null : Convert.ToDateTime(item.ItemArray[4].ToString());
                         appointmentDAO.Appointment_Diagnosis = item.ItemArray[5].ToString();

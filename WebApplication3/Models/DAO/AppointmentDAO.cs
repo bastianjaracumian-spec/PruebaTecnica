@@ -3,8 +3,8 @@
     public class AppointmentDAO
     {
         public int Appointment_Id { get; set; }
-        public int PatientId { get; set; }
-        public int DoctorId { get; set; }
+        public string? PatientId { get; set; }
+        public string? DoctorId { get; set; }
         public DateTime? Appointment_StartUtc { get; set; }
         public DateTime? Appointment_EndUtc { get; set; }
         public string Appointment_Diagnosis { get; set; }

@@ -31,7 +31,7 @@ namespace ApiAtencionesMédicas.Controllers
         /// <response code="200">Retorna lista de pacientes</response>
         /// <response code="500">Error interno</response>
         [HttpGet("GetAppointment")]
-        public async Task<IActionResult> GetUsers([FromHeader] string Authorization)
+        public async Task<IActionResult> GetAppointment([FromHeader] string Authorization)
         {
             try
             {

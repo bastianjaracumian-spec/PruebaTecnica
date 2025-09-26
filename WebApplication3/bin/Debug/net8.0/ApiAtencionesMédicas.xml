@@ -4,7 +4,7 @@
         <name>ApiAtencionesMédicas</name>
     </assembly>
     <members>
-        <member name="M:ApiAtencionesMédicas.Controllers.AppointmentController.GetUsers(System.String)">
+        <member name="M:ApiAtencionesMédicas.Controllers.AppointmentController.GetAppointment(System.String)">
             <summary>
             Busqueda total de de agendas
             </summary>

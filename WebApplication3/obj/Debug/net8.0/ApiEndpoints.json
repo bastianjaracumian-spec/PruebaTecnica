@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "ApiAtencionesM\u00E9dicas.Controllers.AppointmentController",
-    "Method": "GetUsers",
+    "Method": "GetAppointment",
     "RelativePath": "Api/Appointment/GetAppointment",
     "HttpMethod": "GET",
     "IsController": true,
