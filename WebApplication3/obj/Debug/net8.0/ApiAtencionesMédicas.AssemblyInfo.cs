@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiAtencionesMédicas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50bb8ab212d2a0391c4c1172656b7aeb6e8bd774")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f8a7116cddfadbbebd08d24d5e87d62b7d57180")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiAtencionesMédicas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiAtencionesMédicas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

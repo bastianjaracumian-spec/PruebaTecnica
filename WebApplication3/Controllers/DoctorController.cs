@@ -48,11 +48,15 @@ namespace ApiAtencionesMédicas.Controllers
             }
         }
         /// <summary>
-        /// 
+        /// Metodo para añadir doctor
         /// </summary>
         /// <param name="Authorization"></param>
         /// <param name="doctorDTO"></param>
         /// <returns></returns>
+        /// <response code="201">Crea doctor</response>
+        /// <response code="400">Usuario no creado, verificar si ya existe</response>
+        /// <response code="401">Authorization es requerido</response>
+        /// <response code="500">Error interno</response>
         [HttpPost("AddDoctor")]
         public async Task<IActionResult> AddDoctor([FromHeader] string Authorization, [FromBody] DoctorDTO doctorDTO)
         {
@@ -75,12 +79,16 @@ namespace ApiAtencionesMédicas.Controllers
             }
         }
         /// <summary>
-        /// 
+        /// Actualiza datos del doctor
         /// </summary>
         /// <param name="Authorization"></param>
         /// <param name="doctorDTO"></param>
         /// <param name="Doctor_Id"></param>
-        /// <returns></returns>
+        /// <returns>Retorna mensaje de actualización correcta</returns>
+        /// <response code="200">Actualizacion correcta</response>
+        /// <response code="400">Usuario no actualizado, verificar si existe</response>
+        /// <response code="401">Authorization es requerido</response>
+        /// <response code="500">Error interno</response>
         [HttpPatch("UpdateDoctor/{Doctor_Id}")]
         public async Task<IActionResult> UpdateDoctor([FromHeader] string Authorization, [FromBody] DoctorDTO doctorDTO, int Doctor_Id)
         {
@@ -103,11 +111,15 @@ namespace ApiAtencionesMédicas.Controllers
             }
         }
         /// <summary>
-        /// 
+        /// Metodo para eliminar doctor
         /// </summary>
         /// <param name="Authorization"></param>
         /// <param name="Doctor_Id"></param>
-        /// <returns></returns>
+        /// <returns>Retorna mensaje de eliminacion correcta</returns>
+        /// <response code="200">Eliminación Correcta</response>
+        /// <response code="400">Usuario no eliminado, verificar si existe</response>
+        /// <response code="401">Authorization es requerido</response>
+        /// <response code="500">Error interno</response>
         [HttpDelete("DeleteDoctor/{Doctor_Id}")]
         public async Task<IActionResult> DeletePatient([FromHeader] string Authorization, int Doctor_Id)
         {

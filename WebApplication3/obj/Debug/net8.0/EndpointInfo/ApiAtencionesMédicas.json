@@ -5,6 +5,22 @@
     "version": "v1"
   },
   "paths": {
+    "/Api/Appointment/GetAppointment": {
+      "get": {
+        "tags": [
+          "Appointment"
+        ],
+        "summary": "Busqueda total de de agendas",
+        "responses": {
+          "200": {
+            "description": "Retorna lista de pacientes"
+          },
+          "500": {
+            "description": "Error interno"
+          }
+        }
+      }
+    },
     "/Api/Authenticator/GetTokenUser/{User}/{Pass}/{TypeUser}": {
       "get": {
         "tags": [
@@ -74,7 +90,7 @@
         "tags": [
           "Doctor"
         ],
-        "summary": "",
+        "summary": "Metodo para añadir doctor",
         "requestBody": {
           "description": "",
           "content": {
@@ -98,6 +114,18 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "201": {
+            "description": "Crea doctor"
+          },
+          "400": {
+            "description": "Usuario no creado, verificar si ya existe"
+          },
+          "401": {
+            "description": "Authorization es requerido"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
@@ -107,7 +135,7 @@
         "tags": [
           "Doctor"
         ],
-        "summary": "",
+        "summary": "Actualiza datos del doctor",
         "parameters": [
           {
             "name": "Doctor_Id",
@@ -142,7 +170,16 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Actualizacion correcta"
+          },
+          "400": {
+            "description": "Usuario no actualizado, verificar si existe"
+          },
+          "401": {
+            "description": "Authorization es requerido"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }
@@ -152,7 +189,7 @@
         "tags": [
           "Doctor"
         ],
-        "summary": "",
+        "summary": "Metodo para eliminar doctor",
         "parameters": [
           {
             "name": "Doctor_Id",
@@ -167,7 +204,16 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Eliminación Correcta"
+          },
+          "400": {
+            "description": "Usuario no eliminado, verificar si existe"
+          },
+          "401": {
+            "description": "Authorization es requerido"
+          },
+          "500": {
+            "description": "Error interno"
           }
         }
       }

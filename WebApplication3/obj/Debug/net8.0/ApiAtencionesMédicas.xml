@@ -4,6 +4,15 @@
         <name>ApiAtencionesMédicas</name>
     </assembly>
     <members>
+        <member name="M:ApiAtencionesMédicas.Controllers.AppointmentController.GetUsers(System.String)">
+            <summary>
+            Busqueda total de de agendas
+            </summary>
+            <param name="Authorization"></param>
+            <returns>Retorna pacientes</returns>
+            <response code="200">Retorna lista de pacientes</response>
+            <response code="500">Error interno</response>
+        </member>
         <member name="M:ApiAtencionesMédicas.Controllers.AuthenticatorController.GetTokenUser(System.String,System.String,System.String)">
             <summary>
             Metodo para creación de token JWT por usuario
@@ -26,28 +35,40 @@
         </member>
         <member name="M:ApiAtencionesMédicas.Controllers.DoctorController.AddDoctor(System.String,ApiAtencionesMédicas.Models.DTO.DoctorDTO)">
             <summary>
-            
+            Metodo para añadir doctor
             </summary>
             <param name="Authorization"></param>
             <param name="doctorDTO"></param>
             <returns></returns>
+            <response code="201">Crea doctor</response>
+            <response code="400">Usuario no creado, verificar si ya existe</response>
+            <response code="401">Authorization es requerido</response>
+            <response code="500">Error interno</response>
         </member>
         <member name="M:ApiAtencionesMédicas.Controllers.DoctorController.UpdateDoctor(System.String,ApiAtencionesMédicas.Models.DTO.DoctorDTO,System.Int32)">
             <summary>
-            
+            Actualiza datos del doctor
             </summary>
             <param name="Authorization"></param>
             <param name="doctorDTO"></param>
             <param name="Doctor_Id"></param>
-            <returns></returns>
+            <returns>Retorna mensaje de actualización correcta</returns>
+            <response code="200">Actualizacion correcta</response>
+            <response code="400">Usuario no actualizado, verificar si existe</response>
+            <response code="401">Authorization es requerido</response>
+            <response code="500">Error interno</response>
         </member>
         <member name="M:ApiAtencionesMédicas.Controllers.DoctorController.DeletePatient(System.String,System.Int32)">
             <summary>
-            
+            Metodo para eliminar doctor
             </summary>
             <param name="Authorization"></param>
             <param name="Doctor_Id"></param>
-            <returns></returns>
+            <returns>Retorna mensaje de eliminacion correcta</returns>
+            <response code="200">Eliminación Correcta</response>
+            <response code="400">Usuario no eliminado, verificar si existe</response>
+            <response code="401">Authorization es requerido</response>
+            <response code="500">Error interno</response>
         </member>
         <member name="M:ApiAtencionesMédicas.Controllers.PatientController.GetUsers(System.String)">
             <summary>
@@ -101,7 +122,7 @@
             <param name="Authorization"></param>
             <param name="Patient_Id"></param>
             <returns></returns>
-            <returns>Retorna mensaje de actualización correcta</returns>
+            <returns>Retorna mensaje de eliminación correcta</returns>
             <response code="200">Eliminación Correcta</response>
             <response code="400">Usuario no eliminado, verificar si existe</response>
             <response code="401">Authorization es requerido</response>

@@ -144,7 +144,7 @@ namespace ApiAtencionesMédicas.Controllers
         /// <param name="Authorization"></param>
         /// <param name="Patient_Id"></param>
         /// <returns></returns>
-        /// <returns>Retorna mensaje de actualización correcta</returns>
+        /// <returns>Retorna mensaje de eliminación correcta</returns>
         /// <response code="200">Eliminación Correcta</response>
         /// <response code="400">Usuario no eliminado, verificar si existe</response>
         /// <response code="401">Authorization es requerido</response>

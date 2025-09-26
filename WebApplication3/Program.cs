@@ -10,6 +10,8 @@ using ApiAtencionesMédicas.Utils;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using ApiAtencionesMédicas.Repositorys.AppointmentRepository;
+using ApiAtencionesMédicas.Services.AppointmentServices;
 
 var builder = WebApplication.CreateBuilder(args);
 //Inyeccion de repositorios
@@ -17,12 +19,14 @@ builder.Services.AddScoped<UnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IJWTRepository, JWTRepository>();
 builder.Services.AddScoped<IPatientRepository, PatientRepository>();
 builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
+builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<JWTUtils, JWTUtils>();
 
 //Inyeccion de servicios
 builder.Services.AddScoped<IJWTServices, JWTServices>();
 builder.Services.AddScoped<IPatientServices, PatientServices>();
 builder.Services.AddScoped<IDoctorServices, DoctorServices>();
+builder.Services.AddScoped<IAppointmentServices, AppointmentServices>();
 
 
 
